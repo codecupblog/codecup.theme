@@ -1,0 +1,21 @@
+{{!< layout}}
+<div class="post-lists">
+	{{#foreach posts}}
+	<section class="post-container">
+		<header>
+			<a href="{{url}}">
+				<h1>{{title}}</h1>
+			</a>
+			<div class="post-info">
+				By <span class="author">{{author}}</span> on <span class="date">{{date format='dddd DD MMM YYYY'}}</span>
+			<div/>
+		</header>
+	<a href="{{url}}">
+		<p>{{excerpt}}</p>
+	</a>
+	{{#if tags}}
+	<span class="tags">{{tags separator=" | "}}</span>
+	{{/if}}
+	</section>
+	{{/foreach}}
+</div>

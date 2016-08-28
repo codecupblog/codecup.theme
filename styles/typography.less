@@ -1,0 +1,98 @@
+@textFontSize: 
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-size: 62.5%;
+}
+
+h1 {
+	font-size: @h1FontSize;
+	font-family: @titleFont;
+}
+
+h2 {
+	font-size: @h2FontSize;
+	font-family: @titleFont;	
+}
+
+h3 {
+	font-size: @h3FontSize;
+	font-family: @titleFont;
+}
+
+h4 {
+	font-size: @h4FontSize;
+	font-family: @titleFont;
+}
+
+h5 {	
+	font-size: @h5FontSize;
+	font-family: @titleFont;
+}
+
+h6 {
+	font-size: @h6FontSize;
+	font-family: @titleFont;
+}
+
+pre {
+	font-size: @textFontSize;
+}
+
+a {
+	font-size: @textFontSize;
+	text-decoration: none;
+	border-bottom: 1px dashed @lightTextColor;
+	color: @lightTextColor;
+	font-family: @textFont;
+}
+
+p {
+	font-size: @textFontSize;
+	line-height: 1.5;
+	font-family: @textFont;
+}
+
+ul {
+	font-size: @textFontSize;
+	font-family: @textFont;
+	ul {
+		font-size: 1em;
+
+		ul {
+			font-size: 1em;
+
+			ul {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+ol {
+	font-size: @textFontSize;
+	font-family: @textFont;
+	ol {
+		font-size: 1em;
+
+		ol {
+			font-size: 1em;
+
+			ol {
+				font-size: 1em;
+			}
+		}
+	}
+}
+
+figure {
+	font-size: @textSmallFontSize;
+	font-family: @textFont;
+	color: @lightTextColor;
+	font-style: italic;
+	text-align: center;
+}
+

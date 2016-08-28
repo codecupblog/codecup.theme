@@ -1,0 +1,53 @@
+body {
+	.ZeroMarginPadding;
+	background-color: @white;
+}
+
+#container {
+	.ZeroMarginPadding;
+}
+
+
+#topbar {
+	position: absolute;
+	top: 0; 
+	left: 0;
+	right: 0;
+	.ZeroMarginPadding;
+	background-color: @white;
+	height: 70px;
+	.Shadow(12px, .3);
+	z-index: 20;
+
+	h1 {
+		.ZeroMarginPadding;
+		font-family: @titleFont;
+		font-size: 2.4em;
+		font-weight: 100;
+
+		i {
+			font-size: 1.2em;
+			padding-right: -1px;
+			position: relative;
+			top: 0px;
+			font-size: 1.4em;
+		}
+	}
+
+	.wrapper {
+		.ZeroMarginPadding;
+		width: 200px;
+		height: 100%;
+		padding-left: 20px;
+	}
+}
+
+#main {
+	position: relative;
+	background-color: @white;
+	max-width: @mainMaxWidth;
+	margin: 0 auto;
+	padding-top: 70px;
+	padding-bottom: 60px;
+	z-index: 0;
+}

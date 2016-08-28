@@ -1,0 +1,28 @@
+.ZeroMarginPadding() {
+	padding: 0px;
+	margin: 0px;
+}
+
+.table {
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.cell {
+	width: 100%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.cell-left {
+	.cell;
+	text-align: left;
+}
+
+.Shadow(@spread: 5px, @opacity: 0.3) {
+	-webkit-box-shadow: 0 0 @spread rgba(0,0,0,@opacity);
+	-moz-box-shadow: 0 0 @spread rgba(0,0,0,@opacity);
+	box-shadow: 0 0 @spread rgba(0,0,0,@opacity);
+}
